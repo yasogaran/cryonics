@@ -1,19 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Cryonics | Home</title>
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="style.css">
+        <title>Cryonics | Home</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- NAVIGATION BAR AND HERO -->
+            <div class="row bg-dark">
+                <div class="navigation-bar">
+                    <div class="container d-flex justify-content-between">
+                        <div class="navigation-brand">
+                            <img src="./res/img/logo.png" alt="">
+                        </div>
+                        <ul class="navigation-list">
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">Home</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">Technology</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">Products</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">Events</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">Blog</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">Application</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">Contact</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 position-relative">
+                    <video
+                        src="./res/vdo/banner.mp4"
+                        autoplay
+                        muted
+                        loop
+                        class="img-fluid"
+                    ></video>
+                    <div class="hero">
+                        <img src="./res/img/logo.png" alt="">
+                        <h1>CRYONICS DRONE MANUFACTURE</h1>
+                        <h3>Innovating Security with Cutting-Edge Drone Technology.</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT RANGE -->
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <h3 class="text-center title">Solutions we are offer</h3>
+                    <h6 class="text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, cumque.</h6>
+                    <div class="row justify-content-center align-items-stretch mt-3">
+                        <!-- CARD -->
+                        <div class="card offer-card" style="width: 15rem;">
+                            <img src="./res/img/vector1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="text-center text-muted">Giant area coverage</h6>
+                                <h5 class="text-center">G Series drones</h5>
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <div class="card offer-card" style="width: 15rem;">
+                            <img src="./res/img/vector2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="text-center text-muted">Home survilance</h6>
+                                <h5 class="text-center">H Series drones</h5>
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <div class="card offer-card" style="width: 15rem;">
+                            <img src="./res/img/vector3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="text-center text-muted">Largest Agriculture field</h6>
+                                <h5 class="text-center">L series</h5>
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <div class="card offer-card" style="width: 15rem;">
+                            <img src="./res/img/vector4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="text-center text-muted">Militery Purpose</h6>
+                                <h5 class="text-center">Super Series</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ABOUT US -->
+            <div class="row justify-content-center about-dard align-items-center">
+                <div class="col-12 col-lg-9 col-xxl-6 mt-3 text-center border border-danger bg-light bg-opacity-75 p-3 rounded-3">
+                    <div class="row justify-content-center">
+                        <h3 class="title">Welcome to CRYONCIS, Pioneers in Drone Security Solutions!</h3>
+                        <h6 class="mt-3 col-xl-9 about-text"> At CRYONICS, we are on a mission to redefine security through innovation and cutting-edge drone technology. With a relentless commitment to excellence, our team of experts is dedicated to manufacturing drones tailored for security purposes. Our journey is fueled by a passion for creating safer environments and providing innovative solutions that transcend traditional security measures. Explore our website to learn more about our projects, the technology driving our drones, and the real-world applications that make us leaders in the industry. Join us as we soar to new heights in securing the future.</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- TECHNOLOGY -->
+            <div class="mt-5 mb-2 row justify-content-center align-items-center col-12 col-xxl-10 mx-auto">
+                <div class="col-12 border-bottom pb-2">
+                    <h3 class="title">Cutting-edge Technology</h3>
+                    <h6 class="text-muted">We are implement our products with latest cutting edge technology</h6>
+                    <button class="btn btn-dark w-auto">Dicover our Technologies</button>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="row align-items-center justify-content-center mt-2 p-2">
+                        <div class="col-9 col-sm-6  col-md-6">
+                            <img src="./res/img/propeller.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6 mt-md-3">
+                            <div class="row align-items-center text-center text-md-start">
+                                <h3>Upgraded Propellers</h3>
+                                <h6 class="text-muted">it Enhances the overall flight experience</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 p-3 h-100">
+                    <div class="row align-items-center justify-content-center p-2">
+                        <div class="col-9 col-sm-6 col-md-6">
+                            <img src="./res/img/aitec.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6 mt-md-3">
+                            <div class="row align-items-center text-center text-md-start">
+                                <h3>AI auto pilot</h3>
+                                <h6 class="text-muted">Make 10X security with new AI driver</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PROJECTS -->
+            <div class="mt-5 mb 2 row justify-content-center bg-dark">
+                <div class="col-12 border-bottom pb-2">
+                    <div class="row justify-content-center">
+                        <h3 class="title text-center">Projects</h3>
+                        <h6 class="text-white text-center">We are successfully conduct many projects in fast few months</h6>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-overlay">
+                        <h4 class="text-white">AI Driver introduce</h4>
+                        <h6 class="text-muted">2023 Aug 23</h6>
+                        <button class="btn btn-dark text-center w-auto">Read More</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-overlay">
+                        <h4 class="text-white">AI Driver introduce</h4>
+                        <h6 class="text-muted">2023 Aug 23</h6>
+                        <button class="btn btn-dark text-center w-auto">Read More</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-overlay">
+                        <h4 class="text-white">AI Driver introduce</h4>
+                        <h6 class="text-muted">2023 Aug 23</h6>
+                        <button class="btn btn-dark text-center w-auto">Read More</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-overlay">
+                        <h4 class="text-white">AI Driver introduce</h4>
+                        <h6 class="text-muted">2023 Aug 23</h6>
+                        <button class="btn btn-dark text-center w-auto">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTACT US -->
+            <div class="container-md mt-5">
+                <h3 class="text-center title">Contact Us</h3>
+                <h6 class="text-muted text-center">Feel free and contact with us</h6>
+                <div class="row p-2 border rounded-3 align-items-center">
+                    <div class="col-12 col-md-4">
+                        <img src="./res/img/contactus.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Email address</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Message</label>
+                            <textarea
+                                name=""
+                                id=""
+                                cols="10"
+                                rows="4"
+                                class="form-control"
+                            ></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-dark">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BLOGS -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-12 col-xl-10 border-bottom">
+                    <h3 class="title">Latest Newsletters</h3>
+                    <h6 class="text-muted">Enjoy with the technological newsletters</h6>
+                    <hr class="mt-2 mb-2"/>
+                    <div class="row justify-content-center gap-4">
+                        <!-- CARD -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="./res/img/proj1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Auto Pilot testing</h5>
+                                <h6 class="text-muted">On 22 Dec 2023</h6>
+                                <div class="card-text">Cryonics are test they AI autopilot drones with srilankan defence foreces</div>
+                                <a href="#" class="btn btn-dark mt-2">Read more</a>
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="./res/img/proj1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Auto Pilot testing</h5>
+                                <h6 class="text-muted">On 22 Dec 2023</h6>
+                                <div class="card-text">Cryonics are test they AI autopilot drones with srilankan defence foreces</div>
+                                <a href="#" class="btn btn-dark mt-2">Read more</a>
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="./res/img/proj1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Auto Pilot testing</h5>
+                                <h6 class="text-muted">On 22 Dec 2023</h6>
+                                <div class="card-text">Cryonics are test they AI autopilot drones with srilankan defence foreces</div>
+                                <a href="#" class="btn btn-dark mt-2">Read more</a>
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="./res/img/proj1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Auto Pilot testing</h5>
+                                <h6 class="text-muted">On 22 Dec 2023</h6>
+                                <div class="card-text">Cryonics are test they AI autopilot drones with srilankan defence foreces</div>
+                                <a href="#" class="btn btn-dark mt-2">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <div class="row">
                 
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

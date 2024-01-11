@@ -1,0 +1,177 @@
+:root {
+  --c1: #ea0909;
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation-bar {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background-color: #93050597;
+
+  z-index: 10;
+  padding: 10px 10px;
+}
+.navigation-brand > img {
+  height: 40px;
+}
+.navigation-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.navigation-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navigation-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+}
+.navigation-link:hover::after {
+  width: 100%;
+}
+.navigation-link::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero > img {
+  height: 400px;
+}
+.hero > * {
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  /* text-shadow: 1px 2px 5px #000; */
+  animation: 1s ani1 infinite alternate-reverse;
+}
+
+@keyframes ani1 {
+  from {
+    text-shadow: 0px 0px 5px #000;
+  }
+  to {
+    text-shadow: 0px 0px 15px #b80404;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero > img {
+    display: none;
+  }
+}
+
+/* OFFER SECTION */
+.offer-card {
+  box-shadow: 0px 0px 3px #ea0909;
+  margin: 10px;
+  align-items: stretch;
+}
+
+.title {
+  color: var(--c1);
+}
+
+/* PROJECT SECTION */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 250px;
+  background-size: auto;
+  background-position: center;
+  margin:10px;
+  border-radius: 20px;
+}
+.project-card-overlay {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #ea090964;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.4s;
+}
+.project-card:hover > .project-card-overlay{
+  opacity: 1;
+  height: 100%;
+  transition: 0.7s;
+}
+
+.project-card:nth-child(2){
+  background-image: url("./res/img/proj1.png");
+}
+.project-card:nth-child(3){
+  background-image: url("./res/img/proj2.png");
+}
+.project-card:nth-child(4){
+  background-image: url("./res/img/proj3.png");
+}
+.project-card:nth-child(5){
+  background-image: url("./res/img/proj4.png");
+}
+/* ABOUTUS */
+.about-text{
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+.about-dard{
+  background:url(./res/img/bg1.png);
+  background-position: center;
+  min-height: 400px;
+  animation: 10s ease ani2 infinite alternate-reverse;
+  padding: 20px;
+}
+@keyframes ani2 {
+  0%{
+    background-position-x: 0;
+  }
+  20%{
+    background-position-x: 20px;
+  }
+  40%{
+    background-position-y: 0;
+  }
+  60%{
+    background-position-y: 20px;
+  }
+  80%{
+    background-position-x: 10px;
+    background-position-y: 10px;
+  }
+  100%{
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+}
