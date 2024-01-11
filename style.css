@@ -175,3 +175,12 @@
     background-position-y: 0px;
   }
 }
+/* FOOTER */
+.footer-link{
+  color: var(--c1);
+  text-decoration: none;
+}
+.footer-link:hover{
+  color: #fff;
+  text-decoration: none;
+}
