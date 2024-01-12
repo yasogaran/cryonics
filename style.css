@@ -187,7 +187,6 @@
 
 /* PAGE--ABOUT */
 .about-page{
-  /* background-image: url("./res/img/bg2.jpg"); */
   background-position: center;
   background-size: cover;
   backdrop-filter: blur(0.5);
@@ -208,4 +207,10 @@
 }
 .bg-red{
   background-color: var(--c1);
+}
+.person-card{
+  user-select: none;
+}
+.person-card:hover{
+ background-color: #f0f8ff;
 }
