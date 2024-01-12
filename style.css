@@ -184,3 +184,28 @@
   color: #fff;
   text-decoration: none;
 }
+
+/* PAGE--ABOUT */
+.about-page{
+  /* background-image: url("./res/img/bg2.jpg"); */
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(0.5);
+}
+.about-body{
+  background: url('/res/img/bg1.png');
+  animation: 10s ease-in-out ani2 infinite alternate;
+  background-size: cover;
+
+}
+@media(min-width:768px){
+  .vision{
+    transform: translate(-50px, -20px);
+  }
+  .mission{
+    transform: translate(50px, -20px);
+  }
+}
+.bg-red{
+  background-color: var(--c1);
+}
